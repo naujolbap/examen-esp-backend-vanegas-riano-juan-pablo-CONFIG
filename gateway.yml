@@ -11,7 +11,6 @@ spring:
           enabled: true
       routes:
         - id: mscatalog
-          path: 
           uri: lb://catalog-service
           predicates:
             - Path=/api/v1/catalog/**
